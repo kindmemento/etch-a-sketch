@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="urf-8">
+<link rel="stylesheet" href="styles.css">
+
+<title>Etch-a-Sketch</title>
+
+</head>
+
+<body>
+    <div id="container">
+		<h2>Select size!</h2>
+		<input id="input" type="range" min="2" max="30" oninput="this.nextElementSibling.value = this.value + 'x' + this.value">
+		<output class="grid-size">16x16</output>
+		<button id="submit" type="submit">Submit</button>
+		<button id="reset" type="reset">Reset</button>
+    </div>
+    
+    <div id="form"></div>
+    
+	<script src="main.js" defer></script>
+</body>
+</html>
